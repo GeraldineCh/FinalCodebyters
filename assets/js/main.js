@@ -97,7 +97,7 @@ function solucion1(){
     }
     pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
   }else{
-    alert("Flatan pregunatas por responder");
+    alert("Faltan pregunatas por responder");
   }
 
 }

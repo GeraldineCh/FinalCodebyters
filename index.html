@@ -18,7 +18,7 @@
 	    </div>
     </div>
   </header>
-  <img src="assets/image/logo-laboratoria.svg" alt="">
+  <img src="assets/image/logo-laboratoria.svg">
   <h2>¿Qué es Laboratoria?</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repudiandae placeat necessitatibus deleniti accusantium eveniet, voluptatum, eaque mollitia architecto doloremque minus tenetur aspernatur adipisci nobis perferendis dolore quasi laudantium labore!</p>
   <br>
@@ -105,7 +105,7 @@
        var myParam = location.search.split('nombre=')[1]
        var nombre = document.getElementById('nombre');
        if (myParam == undefined) {
-           var inicio = prompt('Cual es tu nombre');
+           var inicio = prompt('Cual es tu nombre').toUpperCase();
            nombre.innerHTML = inicio;
        } else {
            nombre.innerHTML = myParam;
