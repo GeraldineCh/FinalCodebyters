@@ -116,7 +116,7 @@
        var myParam = location.search.split('nombre=')[1]
        var nombre = document.getElementById('nombre');
        if (myParam == undefined) {
-           var inicio = prompt('Cual es tu nombre');
+           var inicio = prompt('Cual es tu nombre').toUpperCase();
            nombre.innerHTML = inicio;
        } else {
            nombre.innerHTML = myParam;
