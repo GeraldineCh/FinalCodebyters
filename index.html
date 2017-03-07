@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Capitan v0.0.1</title>
-    <script type='text/javascript' src='assets/js/main.js'></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitán V 0.0.1</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 </head>
-<body>
-	<div id="contenedor">
-		
-		<div id="usuario" align="right">Hola coder</div>
-		
-		<div id="logo" align="center">
-			<img src="http://laboratoria.la/app/assets/img/logo_laboratoria-09.svg" width="300" height="150">
-		</div>
+<body class="contenedor-contenido-pagina">
+  <header>
+    <div class="dropdown">Hola <span id = "nombre"> </span>
+	  <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+	    <div id="myDropdown" class="dropdown-content">
+		  <a href="index2.html">Perfil</a>
+		  <a href="index3.html">Salir</a>
+	    </div>
+    </div>
+  </header>
+  <img src="assets/image/logo-laboratoria.svg" alt="">
+  <h2>¿Qué es Laboratoria?</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repudiandae placeat necessitatibus deleniti accusantium eveniet, voluptatum, eaque mollitia architecto doloremque minus tenetur aspernatur adipisci nobis perferendis dolore quasi laudantium labore!</p>
+  <br>
+  <h3>Temas</h3>
+  <br><br>
+  <div class="botones">
+    <button type="button" name="spring1" onclick="temas(name);">Sprint 1</button>
+    <button type="button" name="spring2" onclick="temas(name);">Sprint 2</button>
+    <button type="button" name="spring3" onclick="temas(name);">Sprint 3</button>
+  </div>
 
-		<div id="info">
-			<h2>¿Qué es laboratoria?</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, vero pariatur quo! Nam, alias distinctio asperiores voluptate eos repellendus beatae possimus officiis tempore officia quisquam eligendi? Ipsam accusantium, earum magni error voluptas debitis nam, unde neque. Suscipit eligendi animi nisi nulla placeat delectus quasi aliquam perferendis, saepe laboriosam quaerat deleniti.</p>
-		</div>
+  <div class="" id="leccion">
+    <!--contenido de leccion-->
+  </div>
 
-		<div id="contenedor-botones">
+  <div class="" id = "contenido">
+    <!--contenido de temas-->
+  </div>
+  <div id = "spring1">
+    <hr>
+    <h4>Quiz</h4>
+    <div id="quiz1">
+      <form>
+        <h4><label> Existen dos tipos de funciones </label></h4>
+        <div class="pregunta1.1">
+          <input type = "radio" name = "1p1" value="1"> Expresadas y declaradas<br>
+          <input type = "radio" name = "1p1" value="2"> Explicitas y declaradas <br>
+          <input type = "radio" name = "1p1" value="3"> Expresadas y derivadas<br><br>
+        </div>
+        <h4><label> Elije una propiedad de los arreglos </label></h4>
+        <div class="pregunta1.2">
+          <input type = 'radio' name = "1p2" value="1"> clear<br>
+          <input type = 'radio' name = "1p2" value="2"> pop <br>
+          <input type = 'radio' name = "1p2" value="3"> add<br><br>
+        </div>
+        <h4><label> Un objeto tiene _ _ _ _ y _ _ _ _ </label></h4>
+        <div class="pregunta1.3">
+          <input type = 'radio' name = "1p3" value="1"> números y letras<br>
+          <input type = 'radio' name = "1p3" value="2"> partes y validaciones <br>
+          <input type = 'radio' name = "1p3" value="3"> propiedades y valores<br>
+        </div>
+        <br><br>
+        <button type="button" name="button" onclick="solucion1();">Enviar</button>
+      </form>
 
-		<h4>Temas</h4>
-			<div id="botones">
-				
-				<input id="botonSprint1" type="button" value="Sprint 1" onclick="botones(this.id)">
-				<input id="botonSprint2" type="button" value="Sprint 2" onclick="botones(this.id)">
-				<input id="botonSprint3" type="button" value="Sprint 3" onclick="botones(this.id)">
+    </div>
+  </div>
+  <div id = "spring2">
+    <hr>
+    <h4>Quiz</h4>
+    <div id= "quiz2">
+      <form>
+        <h4><label> ¿Cuál es el comando para iniciar un repositorio desde la consola? </label></h4>
+        <div class="">
+          <input type = 'radio' name = "2p1" value="1"> git init .<br>
+          <input type = 'radio' name = "2p1" value="2"> git init <br>
+          <input type = 'radio' name = "2p1" value="3"> git init add<br><br>
+        </div>
+        <h4> ¿Cuál es el la finalidad de hacer una prueba unitaria? </h4>
+        <div class="">
+          <input type = 'radio' name = "2p2" value="1"> Comprobar que el código funciona correctamente<br>
+          <input type = 'radio' name = "2p2" value="2"> Darle valores a los parametros de dichas funciones <br>
+          <input type = 'radio' name = "2p2" value="3"> No tiene ningún fin<br><br>
 
-			</div>
-		</div>
-		<br>
-		<br>
-		<div id="sprints">
+        </div>
+        <h4><label> ¿Que significa DOM? </label></h4>
+        <div class="">
+          <input type = 'radio' name = "2p3" value="1"> Dual Objet Model<br>
+          <input type = 'radio' name = "2p3" value="2"> Document Objet Model <br>
+          <input type = 'radio' name = "2p3" value="3"> Document Obsolet Model<br>
 
-			<strong><div id="tituloSprint">Sprint 2: Introducción al desarrollo web y construcción de páginas web</div></strong>
-			<div id="textoSprint">
-				<ol id="lista">
-					<li id="li1">Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor/ Configuración del ambiente de trabajo e introducción a git.</li>
-					<li id="li2">HTML y Javascript en el navegador.</li>
-					<li id="li3">Manejo de comandos básicos de git en la terminal.</li>
-					<li id="li4">Pruebas unitarias</li>
-					<li id="li5">Git / Resolución de conflictos / Branching model</li>
-					<li id="li6">DOM</li>
-				</ol>
-			</div>
-			
-		</div>
-		
-		<br>
-		<hr>
+        </div>
+        <br><br>
+        <button type="button" name="button" onclick="solucion2();">Enviar</button>
+      </form>
 
-		<div id="quiz">
+    </div>
+  </div>
+  <div id="spring3">
 
-		<h4>Quiz</h4>
-
-		<form name="formulario">
-
-		<h4 id="quiz1">¿Cuál es el comando para iniciar un repositorio desde la consola?</h4>
-
-				<input id="pregunta1" type="radio" name="preg1" onclick="puntosQuiz()"><span>git init . </span><br>
-				<input id="pregunta2" type="radio" name="preg1" onclick="puntosQuiz()"><span>git init <br>
-				<input id="pregunta3" type="radio" name="preg1" onclick="puntosQuiz()"><span>git init add <br>
-
-		<h4 id="quiz2">¿Cuál es la finalidad de hacer una prueba unitaria?</h4>
-				
-				<input id="pregunta4" type="radio" name="preg2" onclick="puntosQuiz()"><span>Comprobar que el código funciona correctamente <br>
-				<input id="pregunta5" type="radio" name="preg2" onclick="puntosQuiz()"><span>Darle valores a los parámetros de dichas funciones <br>
-				<input id="pregunta6" type="radio" name="preg2" onclick="puntosQuiz()"><span>No tiene ningún fin <br>
-
-		<h4 id="quiz3">¿Qué significa DOM?</h4>
-
-				<input id="pregunta7" type="radio" name="preg3" onclick="puntosQuiz()"><span>Dual Object Model <br>
-				<input id="pregunta8" type="radio" name="preg3" onclick="puntosQuiz()"><span>Document Object Model <br>
-				<input id="pregunta9" type="radio" name="preg3" onclick="puntosQuiz()"><span>Document Obsolet Model <br>
-
-		<div>
-		<br>
-		<br>
-			<input id="botonEnviar" type="submit" value="ENVIAR" onclick="enviar()">
-		</div>
-
-		</form> <!-- Preguntas-->
-
-		</div> <!-- Quizz -->
-
-	</div> <!-- Contenedor -->
-
+  </div>
+  <script src="assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>
