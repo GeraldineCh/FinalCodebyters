@@ -1,22 +1,17 @@
-
-//var name = prompt("Ingresa tu nombre");
-//var nombre = document.getElementById("nombre");
-//nombre.innerHTML = name.toUpperCase();
+//Para la visualización del contenido de 2do sprint
 temas("spring2");
 
-//funcion del boton para los temas dependiendo del spring
-
+//Visualización global según sprint
 function temas(valor){
   var leccion = document.getElementById("leccion");
   var contenido = document.getElementById("contenido");
-
+  //Se muestra en los contenedores
   leccion.innerHTML = titulo(valor);
   contenido.innerHTML = sumary(valor);
   mostrar(valor);
-
-
 }
 
+//Visualización nombre sprint
 function titulo(valor){
   var titulo = "";
   switch (valor) {
@@ -32,6 +27,7 @@ function titulo(valor){
 
 }
 
+//Visualización temas
 function sumary(valor){
   var contenidoTemas;
 
@@ -60,9 +56,10 @@ function sumary(valor){
 
 }
 
+//Visualización-ocultamiento según sprint activo
 function mostrar(valor){
   var text = document.getElementById(valor);
-    text.style.display = "block";
+    text.style.display = "block"; //
   switch (valor) {
     case "spring1":  document.getElementById("spring2").style.display = "none";
                      document.getElementById("spring3").style.display = "none";
@@ -79,8 +76,7 @@ function mostrar(valor){
 
 }
 
-//Funciones de la solucion de respuesta
-
+//Soluciones Sprint 1
 function solucion1(){
   var pregunta = document.getElementById('quiz1')
   var r1 = document.getElementsByName("1p1");
@@ -102,6 +98,7 @@ function solucion1(){
 
 }
 
+//Soluciones Sprint 2
 function solucion2(){
   var pregunta = document.getElementById('quiz2')
   var r1 = document.getElementsByName("2p1");
@@ -123,8 +120,9 @@ function solucion2(){
 
 }
 
+//FUNCIÓN PARA VALIDAR LAS RESPUESTAS ENVIADAS
 function validar(r1,r2,r3){
-  var x = 0;
+  var x = 0; //Iniciador conteo
   r1.forEach(function(item,i){
     if(item.checked){ x++;}
   });
