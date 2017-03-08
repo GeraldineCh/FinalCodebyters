@@ -1,4 +1,4 @@
-//Para la visualización del contenido de 2do sprint
+//Para la visualización del contenido de 2do sprint por defecto
 temas("spring2");
 
 //Visualización global según sprint
@@ -68,9 +68,7 @@ function mostrar(valor){
                     document.getElementById("spring2").style.display = "none";
         break;
     default:
-
   }
-
 }
 
 //Soluciones Sprint 1
@@ -82,7 +80,6 @@ function solucion1(){
   var c = 0;
 
   if(validar(r1,r2,r3)){
-
     for(i=0; i<3; i++){
       if(r1[i].checked){ if(r1[i].value == "3"){ c++;}}
       if(r2[i].checked){ if(r2[i].value == "2"){ c++;}}
@@ -92,7 +89,6 @@ function solucion1(){
   }else{
     alert("Faltan pregunatas por responder");
   }
-
 }
 
 //Soluciones Sprint 2
