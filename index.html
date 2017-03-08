@@ -5,43 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Capitán V 0.0.1</title>
+  <!--Archivo .css con las propiedades de imagen para el index-->
   <link rel="stylesheet" href="assets/css/main.css">
+  <!--Para enlazar la fuente asilada en Google Fonts:
+      300: ligth, 400: regular, 700: bold-->
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 </head>
-<body class="contenedor-contenido-pagina"> //Anclado al main.css
+<body class="contenedor-contenido-pagina"> <!--Anclado al main.css-->
   <header>
+    <!--Para el dropdown-->
     <div class="dropdown">Hola <span id = "nombre"> </span>
+        <!--myFunction() en main.js línea                                                                     -->
 	  <button onclick="myFunction()" class="dropbtn">&#9776;</button>
 	    <div id="myDropdown" class="dropdown-content">
       <!--Página con datos de las coders-->
-		  <a href="index2.html" id = "coder">Coders</a> 
+		  <a href="index2.html" id = "coder">Coders</a>
       <!--Página de salida-->
 		  <a href="index3.html">Salir</a>
 	    </div>
     </div>
   </header>
-  <img src="assets/image/logo-laboratoria.svg">
+  <img src="assets/image/logo-laboratoria.svg"> <!--Logo de <l>-->
   <h2>¿Qué es Laboratoria?</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repudiandae placeat necessitatibus deleniti accusantium eveniet, voluptatum, eaque mollitia architecto doloremque minus tenetur aspernatur adipisci nobis perferendis dolore quasi laudantium labore!</p>
   <br>
   <h3>Temas</h3>
   <br><br>
   <div class="botones"> <!--Clase llamada en el main.css-->
-      <!--function temas(valor) en main.js línea 9-->
+      <!--function temas(valor) en main.js línea 9                                                          -->
     <button type="button" name="spring1" onclick="temas(name);">Sprint 1</button>
     <button type="button" name="spring2" onclick="temas(name);">Sprint 2</button>
     <button type="button" name="spring3" onclick="temas(name);">Sprint 3</button>
   </div>
 
+  <!--Contenedor donde se mostrarán los títulos-->
   <div class="" id="leccion">
-    <!--contenido de leccion-->
   </div>
 
+<!--Contenedor donde se mostrarán los temas a desarrollar-->
   <div class="" id = "contenido">
-    <!--contenido de temas-->
   </div>
 
-  <!--CONTEIDO SPRINT 1-->
+  <!--Quiz Sprint 1-->
   <div id = "spring1">
     <hr>
     <h4>Quiz</h4>
@@ -72,7 +77,7 @@
     </div>
   </div>
 
-  <!--CONTEIDO SPRINT 2-->
+  <!--Quiz Sprint 2-->
   <div id = "spring2">
     <hr>
     <h4>Quiz</h4>
@@ -105,16 +110,16 @@
     </div>
   </div>
 
-  <!--CONTEIDO SPRINT 3-->
+  <!--Quiz Sprint 3-->
   <div id="spring3">
   </div>
-  
+
+  <!--Enlace al archivo main.js-->
   <script src="assets/js/main.js" charset="utf-8"></script>
+
+  <!--location.search establece o devuelve la parte de la cadena de
+  consulta de una dirección URL-->
   <script>
-       <!--
-       location.search establece o devuelve la parte de la cadena de
-       consulta de una dirección URL
-       -->
        var myParam = location.search.split('nombre=')[1]
        var nombre = document.getElementById('nombre');
        if (myParam == undefined) {

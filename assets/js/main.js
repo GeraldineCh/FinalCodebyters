@@ -8,7 +8,7 @@ function temas(valor){
   //Se muestra en los contenedores
   leccion.innerHTML = titulo(valor);
   contenido.innerHTML = sumary(valor);
-  mostrar(valor);
+  mostrar(valor); //Evaluado con la función mostrar
 }
 
 //Visualización nombre sprint
@@ -24,13 +24,11 @@ function titulo(valor){
     default:
   }
   return titulo;
-
 }
 
 //Visualización temas
 function sumary(valor){
   var contenidoTemas;
-
   switch (valor) {
     case "spring1": contenidoTemas = "<ol>" +
                                       "<li> Fundamentos de Programación</li>" +
@@ -53,13 +51,12 @@ function sumary(valor){
 
   }
   return contenidoTemas;
-
 }
 
 //Visualización-ocultamiento según sprint activo
 function mostrar(valor){
   var text = document.getElementById(valor);
-    text.style.display = "block"; //
+    text.style.display = "block"; //Para que no se visualice el archivo
   switch (valor) {
     case "spring1":  document.getElementById("spring2").style.display = "none";
                      document.getElementById("spring3").style.display = "none";
@@ -133,11 +130,7 @@ function validar(r1,r2,r3){
     if(item.checked){ x++;}
   });
   if(x==3){ return true;}else{return false;}
-
 }
-
-
-
 
 //Funcion del boton dropdown
 function myFunction() {
